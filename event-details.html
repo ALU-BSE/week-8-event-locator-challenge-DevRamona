@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Details - Event Locator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-text">Event Locator</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+          </ul>
+
+          <div class="nav-auth">
+            <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="event-details-page">
+      <div class="event-hero">
+        <img
+          src="https://images.unsplash.com/photo-1543353071-087092ec393a"
+          alt="Dinner Party"
+          class="hero-image"
+        />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="event-header">
+              <h1 class="event-title">Dinner Party</h1>
+              <div class="event-meta">
+                <div class="date-time">
+                  <i class="far fa-clock"></i>
+                  <span>Saturday, Feb 23 2019</span>
+                  <span class="time">5:00 PM - 11:00 PM</span>
+                </div>
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>5323 Gilroy St Gilroy, CA</span>
+                </div>
+              </div>
+              <div class="share-buttons">
+                <h6>Share With Friends</h6>
+                <div class="social-links">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="far fa-envelope"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="far fa-copy"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-description">
+              <h2>Events Details</h2>
+              <p>
+                We are hosting a dinner party just for our best clients. we are
+                excited to see you there.
+              </p>
+              <p>
+                The event will be held on sat under a beautiful stary night in
+                gilroy on mt. hamilton.
+              </p>
+            </div>
+
+            <div class="event-media">
+              <h2>Event Photos And Videos</h2>
+              <div class="media-container">
+                <div class="video-thumbnail">
+                  <img
+                    src="https://images.unsplash.com/photo-1538333581680-29dd4752ddf2"
+                    alt="Bar Video"
+                  />
+                  <button class="play-button">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="event-sidebar">
+              <div class="subscribe-card">
+                <h3>Subscribe Now</h3>
+                <button class="btn btn-primary w-100 mb-3">
+                  Add to Calendar
+                </button>
+                <div class="text-center">
+                  <p class="mb-2">OR</p>
+                  <p class="small text-muted">
+                    Scan QR with your phone and you will be subscribe
+                    automatically
+                  </p>
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <h3>Event Organizer</h3>
+                <div class="organizer-info">
+                  <img
+                    src="https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+                    alt="American Bar"
+                    class="organizer-logo"
+                  />
+                  <div class="organizer-details">
+                    <h4>American Bar</h4>
+                    <div class="contact-info">
+                      <p><i class="fas fa-phone"></i> (415)444-3434</p>
+                      <p>
+                        <i class="far fa-envelope"></i>
+                        eine.runolfsdottir@yahoo.com
+                      </p>
+                      <p><i class="fas fa-globe"></i> www.hilltopgilroy.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4 py-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <h3 class="footer-brand mb-3">Event Locator</h3>
+              <p class="footer-description">
+                Discover and join amazing events happening in your city. Connect
+                with people who share your interests.
+              </p>
+              <div class="social-links mt-4">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4 class="footer-title">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-title">Newsletter</h4>
+            <p class="newsletter-text">
+              Subscribe to our newsletter for updates on events and offers.
+            </p>
+            <form class="newsletter-form mt-3">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row py-4 border-top">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-md-0">© 2024 Event Locator. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
