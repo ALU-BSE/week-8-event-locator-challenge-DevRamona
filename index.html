@@ -1,202 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Locator - Find Events Near You</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Event Locator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    
+    <main class="events-page">
         <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand" href="index.html">
-            <span class="brand-text">Event Locator</span>
-          </a>
-  
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-            </ul>
-  
-            <div class="nav-auth">
-              <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
-              <a href="register.html" class="btn btn-primary">Sign up</a>
+            <!-- Categories Filter -->
+            <div class="categories-filter mb-5">
+                <button class="category-btn active">ALL</button>
+                <button class="category-btn">ART</button>
+                <button class="category-btn">BUSINESS</button>
+                <button class="category-btn">EDUCATION</button>
+                <button class="category-btn">FESTIVAL</button>
+                <button class="category-btn">FOOD</button>
+                <button class="category-btn">NIGHTLIFE</button>
+                <button class="category-btn">SPORTS</button>
+                <button class="category-btn">MORE</button>
             </div>
-          </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/milano-meeting.jpg" alt="Milano Meeting">
+                        <div class="event-badge">
+                            <span class="showing">SHOWING</span>
+                            <span class="price">$250</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Milano 21T Meeting</h3>
+                        <div class="event-tag">BUSINESS</div>
+                        <div class="event-info">
+                            <div class="info-item">
+                                <i class="far fa-calendar"></i>
+                                <span>November 17, 2023</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Milan</span>
+                            </div>
+                        </div>
+                        <p class="event-description">
+                            Lorem ipsum dolor sit amet, voluptua iracundia an pri, his utinam principes dignissim ad. Ne nec dolore oblique nusquam, cu luptatum volutpat delicatissimi has.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Add more event cards following the same structure -->
+            </div>
         </div>
-      </nav>
-
-    <main class="container my-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h1 class="mega-title mb-4">
-              Find your <span class="highlight">people</span>, discover<br />
-              <span class="highlight">interests</span>, and join inspiring<br />
-              <span class="highlight">events</span>
-            </h1>
-
-            <p class="subtitle mb-4">
-              Join thousands of <span class="highlight">free</span> events
-              today!
-            </p>
-
-            <div class="search-form-container">
-              <form id="searchForm" class="d-flex flex-column gap-3">
-                <input
-                  type="text"
-                  class="form-control form-control-lg custom-input"
-                  placeholder="Enter city name"
-                />
-                <select class="form-control form-control-lg custom-input">
-                  <option value="">All Categories</option>
-                  <option value="music">Music</option>
-                  <option value="sports">Sports</option>
-                  <option value="arts">Arts</option>
-                  <option value="food">Food</option>
-                </select>
-                <input
-                  type="date"
-                  class="form-control form-control-lg custom-input"
-                />
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-lg custom-button"
-                >
-                  Search Events
-                </button>
-              </form>
-            </div>
-
-            <div class="events-count mt-4">
-              <span class="highlight-number">100,000+</span> events happening
-              this week 🎉
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="image-gallery">
-            <div class="blob-background">
-              <img
-                src="images/0.webp"
-                alt="Events"
-                class="rounded-image mb-4"
-              />
-              <img
-                src="images/1.webp"
-                alt="Events"
-                class="rounded-image mb-4"
-              />
-              <img src="images/2.webp" alt="Events" class="rounded-image" />
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
-    <footer class="footer-section">
-      <div class="container">
-      
-        <div class="row g-4 py-5">
-         
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-about">
-              <h3 class="footer-brand mb-3">Event Locator</h3>
-              <p class="footer-description">
-                Discover and join amazing events happening in your city. Connect
-                with people who share your interests.
-              </p>
-              <div class="social-links mt-4">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="social-link"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="social-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-2 col-md-6">
-            <h4 class="footer-title">Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="#">How It Works</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
+    <!-- Footer (same as index.html) -->
 
-          <div class="col-lg-2 col-md-6">
-            <h4 class="footer-title">Support</h4>
-            <ul class="footer-links">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <h4 class="footer-title">Newsletter</h4>
-            <p class="newsletter-text">
-              Subscribe to our newsletter for updates on events and offers.
-            </p>
-            <form class="newsletter-form mt-3">
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                />
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="row py-4 border-top">
-            <div class="col-md-6 text-center text-md-start">
-              <p class="mb-md-0">© 2024 Event Locator. All rights reserved.</p>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-bottom-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Cookies</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <script src="js/events.js"></script>
+</body>
 </html>

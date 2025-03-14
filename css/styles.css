@@ -363,3 +363,280 @@ main {
         margin-top: 1rem;
     }
 }
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Events Page Styles */
+.events-page {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+/* Categories Filter */
+.categories-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.category-btn {
+    background: transparent;
+    border: 2px solid #FFB800;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #FFB800;
+    color: #fff;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Event Card */
+.event-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.05);
+}
+
+.event-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.event-badge span {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.event-badge .showing {
+    background: #fff;
+    color: #333;
+}
+
+.event-badge .price {
+    background: #FFB800;
+    color: #fff;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #FFB800;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.event-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.info-item i {
+    color: #FFB800;
+}
+
+.event-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .events-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .categories-filter {
+        padding: 10px;
+    }
+
+    .category-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Categories Filter */
+.categories-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.category-btn {
+    background: transparent;
+    border: 2px solid #ff1b6b;  /* Changed from #FFB800 */
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #ff1b6b;  /* Changed from #FFB800 */
+    color: #fff;
+}
+
+/* Event Badge */
+.event-badge .price {
+    background: #ff1b6b;  /* Changed from #FFB800 */
+    color: #fff;
+}
+
+/* Event Tag */
+.event-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #ff1b6b;  /* Changed from #FFB800 */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+/* Event Info Icons */
+.info-item i {
+    color: #ff1b6b;  /* Changed from #FFB800 */
+}
+
+/* Additional hover effects with new color */
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 27, 107, 0.1);  /* Added pink shadow */
+}
+
+/* Optional: Add a subtle gradient effect to buttons on hover */
+.category-btn:hover {
+    background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
+    border-color: #ff1b6b;
+}
+
+/* Optional: Add a subtle gradient to event tags */
+.event-tag {
+    background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
+}
+
+/* Optional: Add a subtle transition effect to price badges */
+.event-badge .price {
+    background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
+    transition: transform 0.3s ease;
+}
+
+.event-badge .price:hover {
+    transform: scale(1.05);
+}
