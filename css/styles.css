@@ -22,7 +22,6 @@
 
 .brand-text {
     background: linear-gradient(45deg, #333, #ff1b6b);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
@@ -148,7 +147,6 @@ main {
     color: #666;
 }
 
-/* Search Form Styling */
 .search-form-container {
     max-width: 450px;
 }
@@ -182,7 +180,6 @@ main {
     box-shadow: 0 5px 15px rgba(255, 27, 107, 0.3);
 }
 
-/* Image Gallery */
 .blob-background {
     position: relative;
     padding: 20px;
@@ -211,14 +208,12 @@ main {
     transform: scale(1.02);
 }
 
-/* Events Count */
 .highlight-number {
     color: #ff1b6b;
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 991px) {
     .mega-title {
         font-size: 2.5rem;
@@ -229,14 +224,12 @@ main {
     }
 }
 
-/* Footer Styles */
 .footer-section {
     background-color: #f8f9fa;
     padding: 80px 0 0;
     margin-top: 100px;
 }
 
-/* Footer Titles */
 .footer-brand {
     font-size: 1.8rem;
     font-weight: 700;
@@ -250,13 +243,11 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Footer Description */
 .footer-description {
     color: #666;
     line-height: 1.6;
 }
 
-/* Social Links */
 .social-links {
     display: flex;
     gap: 15px;
@@ -281,7 +272,6 @@ main {
     transform: translateY(-3px);
 }
 
-/* Footer Links */
 .footer-links {
     list-style: none;
     padding: 0;
@@ -302,7 +292,6 @@ main {
     color: #ff1b6b;
 }
 
-/* Newsletter Form */
 .newsletter-text {
     color: #666;
     margin-bottom: 1rem;
@@ -330,7 +319,6 @@ main {
     background-color: #e61861;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     color: #666;
 }
@@ -351,7 +339,6 @@ main {
     color: #ff1b6b;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .footer-section {
         padding-top: 50px;
@@ -364,13 +351,11 @@ main {
     }
 }
 
-/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f8f9fa;
 }
 
-/* Navbar Styles */
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -382,13 +367,11 @@ body {
     color: #333;
 }
 
-/* Events Page Styles */
 .events-page {
     padding-top: 100px;
     min-height: 100vh;
 }
 
-/* Categories Filter */
 .categories-filter {
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +397,6 @@ body {
     color: #fff;
 }
 
-/* Events Grid */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -422,7 +404,6 @@ body {
     padding: 20px 0;
 }
 
-/* Event Card */
 .event-card {
     background: #fff;
     border-radius: 15px;
@@ -523,7 +504,6 @@ body {
     margin: 0;
 }
 
-/* Responsive Styles */
 @media (max-width: 991px) {
     .events-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -550,7 +530,6 @@ body {
     }
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -566,7 +545,6 @@ body {
     animation: fadeIn 0.5s ease forwards;
 }
 
-/* Categories Filter */
 .categories-filter {
     display: flex;
     flex-wrap: wrap;
@@ -577,7 +555,7 @@ body {
 
 .category-btn {
     background: transparent;
-    border: 2px solid #ff1b6b;  /* Changed from #FFB800 */
+    border: 2px solid #ff1b6b;  
     color: #333;
     padding: 8px 20px;
     border-radius: 25px;
@@ -588,50 +566,43 @@ body {
 
 .category-btn.active,
 .category-btn:hover {
-    background: #ff1b6b;  /* Changed from #FFB800 */
+    background: #ff1b6b;  
     color: #fff;
 }
 
-/* Event Badge */
 .event-badge .price {
-    background: #ff1b6b;  /* Changed from #FFB800 */
+    background: #ff1b6b;  
     color: #fff;
 }
 
-/* Event Tag */
 .event-tag {
     display: inline-block;
     padding: 5px 15px;
-    background: #ff1b6b;  /* Changed from #FFB800 */
+    background: #ff1b6b;  
     color: #fff;
     border-radius: 20px;
     font-size: 0.8rem;
     margin-bottom: 15px;
 }
 
-/* Event Info Icons */
 .info-item i {
-    color: #ff1b6b;  /* Changed from #FFB800 */
+    color: #ff1b6b;
 }
 
-/* Additional hover effects with new color */
 .event-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(255, 27, 107, 0.1);  /* Added pink shadow */
+    box-shadow: 0 5px 20px rgba(255, 27, 107, 0.1);  
 }
 
-/* Optional: Add a subtle gradient effect to buttons on hover */
 .category-btn:hover {
     background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
     border-color: #ff1b6b;
 }
 
-/* Optional: Add a subtle gradient to event tags */
 .event-tag {
     background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
 }
 
-/* Optional: Add a subtle transition effect to price badges */
 .event-badge .price {
     background: linear-gradient(45deg, #ff1b6b, #ff4b8b);
     transition: transform 0.3s ease;
@@ -641,12 +612,10 @@ body {
     transform: scale(1.05);
 }
 
-/* Event Details Page Styles */
 .event-details-page {
     padding-top: 76px;
 }
 
-/* Hero Section */
 .event-hero {
     height: 500px;
     position: relative;
@@ -659,7 +628,6 @@ body {
     object-fit: cover;
 }
 
-/* Event Header */
 .event-header {
     padding: 40px 0;
     border-bottom: 1px solid #eee;
@@ -693,7 +661,6 @@ body {
     margin-left: 20px;
 }
 
-/* Share Buttons */
 .share-buttons {
     margin-top: 30px;
 }
@@ -726,7 +693,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Event Description */
 .event-description {
     padding: 40px 0;
     border-bottom: 1px solid #eee;
@@ -739,7 +705,6 @@ body {
     color: #333;
 }
 
-/* Event Media */
 .event-media {
     padding: 40px 0;
 }
@@ -791,7 +756,6 @@ body {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Sidebar */
 .event-sidebar {
     position: sticky;
     top: 100px;
@@ -832,7 +796,6 @@ body {
     margin: 20px 0;
 }
 
-/* Organizer Info */
 .organizer-info {
     display: flex;
     gap: 20px;
@@ -864,7 +827,6 @@ body {
     margin-right: 8px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 991px) {
     .event-hero {
         height: 300px;
